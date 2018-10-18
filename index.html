@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>This is a Todo App</h1>
+        <label for="searchTodo">Search Todos</label>
+        <input type='text' id="searchTodo" for="Search Todos" placeholder="Search Todos">
+        <form id="todoForm">
+            <label for='addTodo'>Add Todo</label>
+            <input type="text" id="addTodo" placeholder="What do you have to do?">
+            <button type="submit">Submit</button>
+            <label for="hideCompleted">
+                Hide Completed
+                <input type="checkbox" id='hideCompleted'>
+            </label>
+        </form>
+    <div id="todo"></div>
+
+    <script src="uuid.js"></script>
+    <script src="todo-functions.js"></script>
+    <script src="todo-app.js"></script>
+</body>
+</html>
