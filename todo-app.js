@@ -4,8 +4,6 @@ const filters = {
     searchText: ''
 }
 
-
-
 renderTodos(todos, filters)
 
 document.querySelector('#searchTodo').addEventListener('input', function (e) {
@@ -31,8 +29,7 @@ document.querySelector('#todoForm').addEventListener('submit', function(e){
     //rerender the todos list
     renderTodos(todos, filters)
     //clear the input
-    e.target.elements.addTodo.value = ''
-    
+    e.target.elements.addTodo.value = ''  
 })    
 
 document.querySelector('#hideCompleted').addEventListener('change', function(e){
